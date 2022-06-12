@@ -91,7 +91,7 @@ h1{
 
 .corpo{
     display: flex;
-    background-image: url(gnsiximg\fundocabeça.jpg);
+    background-image: url("gnsiximg\fundocabeça.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: 0, 0, 255;
@@ -124,7 +124,7 @@ h1{
 
 .fundoh2{
     background-color: rgb(18, 82, 179);
-    background-image: url(gnsiximg\fundao.png);
+    background-image: url("gnsiximg\fundao.png");
     background-size: cover;
     
     margin-bottom: 40px;
@@ -198,7 +198,7 @@ p + p {
 
 .cabeçaf{
     background-color: rgb(18, 82, 179);
-    background-image: url(gnsiximg\fundao.png);
+    background-image: url("gnsiximg\fundao.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 155pt;
@@ -208,7 +208,7 @@ p + p {
 
 .corpof{
     background-color: rgb(0, 55, 98);
-    background-image: url(gnsiximg\fundoc.jpg);
+    background-image: url("gnsiximg\fundoc.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 500pt;
@@ -648,7 +648,7 @@ button:hover{
 }
 
 .seta{
-    background-image: url(gnsiximg\seta.png);
+    background-image: url("gnsiximg\seta.png");
     width: 65px;
     height: 65px;
     padding-top: 5px;
@@ -701,7 +701,7 @@ button:hover{
     display: flex;
     height: 400px;
     background-color: rgba(18, 73, 161, 0.856);
-    background-image: url(gnsiximg\fundao.png);
+    background-image: url("gnsiximg\fundao.png");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -858,7 +858,7 @@ button:hover{
 }
 
 .imgvida{
-    background-image: url(gnsiximg\fundovida.png);
+    background-image: url("gnsiximg\fundovida.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -871,7 +871,7 @@ button:hover{
 }
 
 .imgsaude{
-    background-image: url(gnsiximg\fundosaude.png);
+    background-image: url("gnsiximg\fundosaude.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -879,7 +879,7 @@ button:hover{
 }
 
 .imgfinan{
-    background-image: url(gnsiximg\fundofinan.png);
+    background-image: url("gnsiximg\fundofinan.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
@@ -1399,17 +1399,17 @@ and (max-width: 600px){
         max-width: 576px;
     }
     .imgvida{
-        background-image: url(gnsiximg\img saude mobile.jpg);
+        background-image: url("gnsiximg\img saude mobile.jpg");
         width: 100%;
         height: 40vh;
     }
     .imgsaude{
-        background-image: url(gnsiximg\img mobile saude.jpg);
+        background-image: url("gnsiximg\img mobile saude.jpg");
         width: 100%;
         height: 40vh;
     }
     .imgfinan{
-        background-image: url(gnsiximg\img mobile finan.jpg);
+        background-image: url("gnsiximg\img mobile finan.jpg");
         width: 100%;
         height: 40vh;
     }
