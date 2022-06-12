@@ -91,7 +91,7 @@ h1{
 
 .corpo{
     display: flex;
-    background-image: url("gnsiximg\fundocabeça.jpg");
+    background-image: url(gnsiximg\fundocabeça.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: 0, 0, 255;
