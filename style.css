@@ -1,0 +1,953 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* style */
+
+html, body{
+    font-family: 'Heebo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Corpo padrao */
+
+body > *{
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+/* TOP */
+
+.top{
+    height: 5vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    align-self: center;
+    letter-spacing: 12.5px;
+    padding-top: 5px;
+    min-width: 10%;
+    font-size: 18pt;
+    font-weight: 800;
+}
+
+.logo1{
+    max-height: 28px;
+
+
+}
+
+/* CARROSSEL */
+
+.grupador1{
+    height: 65vh;
+    padding: 0;
+}
+
+.carousel-item {
+    height: 65vh;
+    background-color: #777;
+    color: white;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.textocar{
+    position: absolute;
+    bottom: 20%;
+    top: 20%;
+    left: 20vw;
+    
+
+    z-index: 20;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    height: 65vh;
+
+}
+
+h4{
+    font-size: 40pt;
+    font-weight: 300;
+    color: black;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+b{
+    font-weight: 800;
+    color: rgb(8, 36, 59);
+}
+
+h5{
+    color: rgb(240, 240, 240);
+    font-weight: 500;
+    font-size: 25pt;
+    text-align: left;
+    margin-top: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 8vw;
+    border-radius: 3px;
+
+    line-height: 50px;
+
+    text-shadow: 2px 2px 0px black;
+
+
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8vh;
+    padding-left: 5vw;
+    padding-right: 10vw;
+}
+
+.botoes button{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 20vw;
+    border-radius: 40px;
+
+    font-weight: 800;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.btn1{
+    border-color: rgb(25, 82, 133);
+    background-color: rgb(25, 82, 133);
+
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.btn2{
+
+    background-color: rgba(255, 255, 255, 0.459);
+    border-color: rgb(25, 82, 133);
+    color: rgb(25, 82, 133);
+    letter-spacing: 1px;
+}
+
+
+/* LOGOS PARCEIROS */
+
+.grupador2{
+    height: 300px;
+}
+
+.partxt{
+    color: black;
+    text-shadow: 2px, 2px, 4px black;
+    font-size: 15pt;
+    display: flex;
+    padding-top: 55px;
+    padding-left: 65px;
+    padding-bottom: 35px;
+
+}
+
+.slide{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#logos-home-page .slider {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+@keyframes scroll1 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 14))}
+}
+
+#logos-home-page .slider:before,#logos-home-page .slider:after {
+		background: linear-gradient(to right) 0%,rgba(255,255,255,0) 100%;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+#logos-home-page .slider:after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+        display: none;
+	}
+
+#logos-home-page .slider:before {
+		left: 0;
+		top: 0;
+	}
+	#logos-home-page .slide-track {
+		animation: scroll1 40s linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+#logos-home-page div.slide {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* PRODUTOS EXT */
+
+.grupador3{
+    padding: 0;
+
+    background-color: rgba(18, 73, 161, 0.856);
+    background-image: url('gnsiximg/fundao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+    position: relative;
+}
+
+.paineltopo{
+
+    font-size: x-large;
+    color: white;
+    font-weight: 700;
+
+
+    position: absolute;
+    left:50%;
+    top: 15%;
+    transform:translate(-50%,-50%);
+}
+
+
+
+.grupador4{
+    display: flex;
+
+    height: 400px;
+    width: 100%;
+
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+    flex-wrap: wrap;
+    flex-shrink: 1;
+
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.vida, .saude, .finan{
+    width: 18vw;
+    height: 100%;
+
+    background-color: rgba(243, 243, 243);
+    border-radius: 2px;
+    border: 2px solid rgb(161, 250, 255);
+    box-shadow: 0 0 0.35em rgb(161, 250, 255);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vida:hover, .saude:hover, .finan:hover{
+    cursor: pointer;
+
+    border: 2px solid white;
+    box-shadow: 0 0 0.35em white;
+
+}
+
+.grupador4 a{
+    height: 50%;
+}
+
+a:hover{
+    text-decoration: none;
+
+}
+
+.iconp{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(161, 250, 255);
+    border-left: none;
+    border-right: none;
+    margin-top: 15px;
+
+}
+
+.fundinhotxt{
+    color: rgba(243, 243, 243);
+    width: 13.6vw;
+    height: 80px;
+    background-color: rgb(161, 250, 255);
+
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+
+    margin-top: 15px;
+    letter-spacing: 1.5px;
+    padding-top: 25px;
+
+    align-content: center;
+    justify-content: center;
+
+
+    border-top: 2px solid rgb(161, 250, 255);
+    border-bottom: 2px solid rgb(161, 250, 255);
+}
+
+.txtorg{
+    color: rgb(119, 120, 118);
+    font-size: medium;
+    font-weight: 300;
+    display: flex;
+    line-height: 18px;
+    height: 15px;
+    width: 95%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: -10px;
+
+
+}
+
+/* PAINEIS */
+
+.painel1{
+    height: 60vh;
+    background-color: rgba(243, 243, 243);
+}
+
+.painel2{
+    height: 60vh;
+    background-color: white;
+}
+
+.painel3{
+    height: 60vh;
+    background-color: rgba(243, 243, 243);
+    background-image: url('gnsiximg/fundocontato.jpg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    align-items: center;
+
+}
+
+.painel1, .painel2{
+    display: flex;
+    flex-direction: row;
+}
+
+/* CONTEUDO PAINEIS */
+
+h2{
+    width: 25vw;
+    height: 33px;
+
+    font-size: xx-large;
+    font-weight: 800;
+
+    border-left: 1.5vw solid rgb(25, 82, 133);
+    padding-left: 1.5vw;
+
+    justify-self: center;
+
+    margin-top: 28vh;
+}
+
+.paragrafos{
+    width: 35vw;
+}
+
+.paragrafos :nth-child(1){
+    margin-top: 13vh;
+    text-indent: 0;
+}
+
+p{
+    line-height: 36px;
+    font-size: large;
+    font-weight: 400;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.italic{
+    font-weight: 200;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.imagem h2{
+    margin-top: 14vh;
+}
+
+.imagem img{
+    height: 210px;
+    width: 230px;
+    border-radius: 50%;
+    border: 5px solid rgba(235, 235, 235);
+
+    margin-left: 3vw;
+    margin-top: 8vh;
+}
+
+.painel3 img{
+    width: 160px;
+    height: 180px;
+}
+
+.faleconosco{
+    font-size: large;
+    font-weight: 700;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.iconfale{
+    padding-top: 3vh;
+}
+
+.iconfale img{
+    height: 33px;
+    width: 33px;
+    margin-bottom: -1vh;
+}
+
+h3{
+    font-size: xx-large;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+/* FOOTER */
+
+.footer{
+    padding: 0;
+    height: 5vh;
+    background-color: black;
+    color: white;
+
+    font-size: large;
+    text-align: center;
+    font-weight: 700;
+
+
+    align-content: center;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+/* BOTAO WTS */
+
+.wts{
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    border-radius: 50%;
+}
+
+.wts:hover{
+    cursor: pointer;
+}
+
+.wts img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+
+/* PAGINA VIDA FINAN SAUDE*/
+
+.painelvida{
+    height: 45vh;
+    background-image: url('gnsiximg/fundovida.jpg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+}
+
+.painelsaude{
+    height: 45vh;
+    background-image: url('gnsiximg/fundosaude.jpg');
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+}
+
+.painelfinan{
+    height: 45vh;
+    background-image: url('gnsiximg/fundofinan.jpg');
+    background-position: left;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+}
+
+.paineltexto{
+    font-size: 50pt;
+    font-weight: 800;
+    border-bottom: 5px solid rgb(13, 42, 94);
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px black;
+    width: 17vw;
+    letter-spacing: 5px;
+
+}
+
+.paineltexto1{
+    color: rgb(255, 255, 255);
+    font-size: 25pt;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 3vh;
+}
+
+.filler{
+    height: 30vh;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+}
+
+.fillertexto{
+    font-size: 25pt;
+    font-weight: 700;
+    color: black;
+}
+
+.fillertexto1{
+    font-size: 18pt;
+    font-weight: 400;
+    color: black;
+    padding: 20vw;
+    padding-top: 3vh;
+    line-height: 3vh;
+}
+
+.nossosprodutosv{
+    display: flex;
+    padding: 0;
+    background-color: #DDD7D9;
+    height: 135vh;
+
+}
+
+.nossosprodutoss{
+    display: flex;
+    padding: 0;
+    background-color: #D7E5F5;
+    height: 95vh;
+
+}
+
+.nossosprodutosf{
+    display: flex;
+    padding: 0;
+    background-color: #D7E5F5;
+    height: 95vh;
+
+}
+
+.nossosprodutosf img{
+    width: 50%;
+
+}
+
+.nossosprodutosv img{
+    width: 90%;
+    margin-left: -15vw;
+}
+
+.txtvida{
+    margin-top: 5vh;
+    padding-right: 10vw;
+    position: absolute;
+    margin-left: 55vw;
+}
+
+.plano{
+    font-size: 25pt;
+    font-weight: 800;
+}
+
+h6{
+    margin-top:5vh;
+    border-left: 1.5vw solid rgb(13, 42, 94);
+    font-size: 15pt;
+    padding-left: 0.5vw;
+    font-weight: 800;
+    margin-bottom: 2vh;
+}
+
+.h7{
+    margin-top: 10vh;
+    text-align: left;
+}
+
+/* ADDD */
+
+.hid{
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+.img2{
+    display: none;
+}
+
+.img1{
+    display: flex;
+}
+
+/* VERSAO MOBILE */
+
+@media only screen and (max-width: 600px) {
+    body > *{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        
+    }
+
+    .grupador1{
+        height: 65vh;
+    }
+
+    .carousel-item{
+        height: 65vh;
+    }
+
+    /* BOTAO WTS */
+
+    .wts{
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        top: 89%;
+        left: 80%;
+        border-radius: 50%;
+    }
+
+    .img1{
+        display: none;
+    }
+
+    .img2{
+        display: flex;
+        height: 65vh;
+    }
+
+    .grupador3{
+        height: 90vh;
+        align-content: center;
+       
+
+    }
+
+    .grupador4{
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        align-self: flex-end;
+        padding-top: 15vh;
+        width: 100%;
+    }
+
+    .vida, .saude, .finan{
+        width: 80vw;
+        height: 20vh;
+
+    }
+
+    .grupador4 a{
+        height: 20vh;
+        width: 80vw;
+    }
+
+    .fundinhotxt{
+        width: 58vw;
+    }
+
+
+    .paineltopo{
+        height: 20vh;
+        width: 80vw;
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .txtorg{
+        margin-top: -20px;
+    }
+
+    .partxt{
+        padding-left: 0;
+    }
+
+    .painel1, .painel2{
+        display: flex;
+        flex-direction: column;
+
+        height: 90vh;
+    }
+
+    .painel2{
+        height: 135vh;
+    }
+
+
+
+    h2{
+        width: 80vw;
+        height: 33px;
+    
+    
+        margin-top: 8vh;
+    }
+    
+    .paragrafos{
+        width: 100%;
+    }
+    
+    .paragrafos :nth-child(1){
+        margin-top: 6vh;
+        text-indent: 0;
+    }
+    
+    p{
+        line-height: 36px;
+        font-size: large;
+        font-weight: 400;
+        text-indent: 15px;
+        text-align: justify;
+    }
+
+    .imagem{
+        margin-top: 0vh;
+    }
+
+    .imagem img{
+        margin-left: 15vw;
+    }
+
+    .footer{
+        font-size: smaller;
+        background-color: black;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .txtfooter{
+        background-color: black;
+    }
+
+    .painel3{
+        padding-left: 10vw;
+        padding-right: 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .painel3 img{
+        width: 135px;
+        height: 150px;
+        margin-bottom: 7vh;
+    }
+    .iconfale img{
+        height: 33px;
+        width: 33px;
+        margin-bottom: -1vh;
+    }
+
+    .faleconosco{
+        width: 100vw;
+        padding-top: 7vh;
+        padding-left: 8vw;
+    }
+
+    .textocar{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 100vw auto;
+        text-align: center;
+        padding: 0;
+
+
+    }
+
+    h4{
+        font-size: 30pt;
+        font-weight: 300;
+        text-align: center;
+        margin-left: -20vw;
+        margin-top: -20vh;
+    }
+
+    h5{
+        font-size: 20pt;
+        font-weight: 700;
+        text-align: center;
+
+        margin-left: -10vw;
+    }
+    
+    .botoes{
+        display: none;
+    }
+
+
+    /* MOBILE VIDA SAUDE FINAN */
+
+    .filler{
+        padding-top: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        height: 50vh;
+    }
+
+    .fillertexto1{
+        padding: 0;
+        margin-top: 5vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .painelvida, .painelsaude, .painelfinan{
+
+    }
+
+    .produtos{
+        display: none;
+    }
+
+    .txtvida, .txtfinan, .txtsaude{
+        margin: 0;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 10vh;
+
+        background-color: rgba(243, 243, 243);
+
+    }
+
+    .txtvida{
+        height: 200vh;
+    }
+    
+    .nossosprodutosv{
+        height: 200vh;
+    }
+
+    .txtsaude, .nossosprodutoss{
+        height: 130vh;
+    }
+
+    .txtfinan, .nossosprodutosf{
+        height: 120vh;
+    }
+
+
+}
+

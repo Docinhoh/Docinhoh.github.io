@@ -6,7 +6,6 @@
   "main": "script.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -17,6 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0"
   }
 }
